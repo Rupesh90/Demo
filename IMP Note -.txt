@@ -1,0 +1,6 @@
+<!--in urlapterns name=about ut views(defa bout)-->
+
+<li class="nav-item">
+<a class="nav-link" href="{% url 'about' %}"> About </a>
+</li>
+                    

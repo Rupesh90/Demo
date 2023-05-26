@@ -74,11 +74,15 @@ WSGI_APPLICATION = 'carzone.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.0/ref/settings/#databases
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-    }
+DATABASES = {  
+    'default': {  
+        'ENGINE': 'django.db.backends.mysql',  
+        'NAME': 'Restapi',  
+        'USER': 'root',  
+        'PASSWORD': 'rupesh@90#0506',  
+        'HOST': '127.0.0.1',  
+        'PORT': '3306',  
+}
 }
 
 
@@ -119,3 +123,12 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
 
 STATIC_URL = '/static/'
+
+STATIC_ROOT=os.path.join(BASE_DIR,'static')
+STATICFILES_DIRS=[
+    os.path.join(BASE_DIR,'carzone/static'),
+]
+#the above  code from udemy lect on settings.py static and imp for github bash command
+#purpose
+
+
