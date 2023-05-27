@@ -1,0 +1,6 @@
+Imagefields =>
+
+whenever we work with imagefields fields  in -> models.py =>
+
+we should install 
+pip install pillow
